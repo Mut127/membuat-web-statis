@@ -124,7 +124,7 @@ section {
   height: 100vh;
 }
 
-section video {
+.hero video {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,10 +133,10 @@ section video {
   object-fit: cover;
 }
 
-section .navigation {
+.hero .navigation {
   position: absolute;
   bottom: 40px;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
   z-index: 100;
   display: flex;
@@ -144,27 +144,27 @@ section .navigation {
   align-items: center;
 }
 
-section .navigation li {
+.hero .navigation li {
   list-style: none;
   cursor: pointer;
   margin: 0 10px;
   border-radius: 4px;
   background: #fff;
-  padding: 3px 3px 0;
+  padding: 1px 1px 0;
   opacity: 0.7;
   transition: 0.1s;
 }
 
-section .navigation li:hover {
+.hero .navigation li:hover {
   opacity: 0.5;
 }
 
-section .navigation li img {
+.hero .navigation li img {
   width: 25px;
   transition: 0.1s;
 }
 
-section .navigation li img:hover {
+.hero .navigation li img:hover {
   width: 50px;
 }
 
@@ -207,7 +207,7 @@ section .navigation li img:hover {
 }
 
 .hero .content h1 span {
-  color: var(--primary);
+  color: var(--bg);
 }
 
 .hero .content p {
@@ -287,7 +287,7 @@ section .navigation li img:hover {
 .unggulan .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 6rem;
   justify-content: center;
 }
 
@@ -298,12 +298,15 @@ section .navigation li img:hover {
 
 .unggulan .row .unggulan-card img {
   border-radius: 50%;
-  width: 70%;
+  width: 50%;
 }
 
 .unggulan .row .unggulan-card .unggulan-card-title {
   text-align: center;
   margin: 1rem auto 1.5rem;
+  margin-top: 2rem;
+  background-color: #fdcfcf;
+  color: #000000;
 }
 
 /* Products Section */
@@ -338,11 +341,12 @@ section .navigation li img:hover {
 .dessert .dessert-icons a {
   width: 4rem;
   height: 4rem;
-  color: #fff;
+  color: #000000;
   margin: 0.3rem;
-  border: 1px solid #666;
+  /* border: 1px solid #666; */
   border-radius: 50%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -370,6 +374,7 @@ section .navigation li img:hover {
 .drink .drink-content h3,
 .dessert .dessert-content h3 {
   font-size: 1.5rem;
+  color: #56c45c;
 }
 
 /* Contect sction */
@@ -401,6 +406,7 @@ section .navigation li img:hover {
   font-size: 1rem;
   background: none;
   color: #fff;
+  font-family: sans-serif;
 }
 
 .contact .row form .btn {
@@ -409,7 +415,7 @@ section .navigation li img:hover {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 10%;
-  color: #fff;
+  color: #000000;
   background-color: #2222;
   cursor: pointer;
 }
