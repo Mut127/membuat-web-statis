@@ -14,12 +14,13 @@
       rel="stylesheet"
     />
 
-    <!-- My style -->
-    <link rel="stylesheet" href="css/style.css" />
-
+    
     <!-- Feather icon -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
+
+  <!-- My style -->
+  <link rel="stylesheet" href="css/style.css" />
 
   <body>
     <!-- Navbar start -->
@@ -28,96 +29,354 @@
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#about">Tentang kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
+        <a href="#unggulan">Unggulan</a>
+        <a href="#course">Main Course</a>
+        <a href="#drink">Drink</a>
+        <a href="#dessert">Dessert</a>
+        <a href="#contact">Masukan</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"> <i data-feather="search"></i> </a>
-        <a href="#" id="hamberger-menu"> <i data-feather="menu"></i> </a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
     <!-- Navbar end -->
+    
+    <!-- slidebar -->
+    <!-- <section>
+      <video id="slider" autoplay muted loop>
+          <source src="vidio 2.mp4.mp4" type="video/mp4">
+      </video>
+      <ul class="navigation">
+          <li onclick="videoUrl('img/slide1.mp4')"><img src="img/slide1.png"></li>
+          <li onclick="videoUrl('img/slide2.mp4')"><img src="img/slide1.png"></li>
+          <li onclick="videoUrl('img/slide3.mp4')"><img src="img/slide1.png"></li>
+      </ul>
+  </section> -->
+  <!-- slidebar end -->
+
 
     <!-- Hero Section start -->
     <section class="hero" id="home">
-      <main class="content">
-        <h1>Mari<span>Memasak</span></h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
-          pariatur?
-        </p>
+      <!-- <section> -->
+        <video id="slider" autoplay muted loop>
+            <source src="img/slide1.mp4" type="video/mp4">
+        </video>
+        <ul class="navigation"><main class="content">
+          <h1>Mari<span> Memasak</span></h1>
+          <p>Masak mudah masak menyenangkan</p>
+          <a href="#" class="cta">Cari Resepmu</a>
+        </main>
+            <li onclick="videoUrl('img/slide1.mp4')"><img src="img/slide1.png">
+            </li>
+            <li onclick="videoUrl('img/slide2.mp4')"><img src="img/slide3.png"></li>
+            <li onclick="videoUrl('img/slide3.mp4')"><img src="img/slide2.png"></li>
+        </ul>
+        
+    </section>
+      <!-- <main class="content">
+        <h1>Mari<span> Memasak</span></h1>
+        <p>Masak mudah masak menyenangkan</p>
         <a href="#" class="cta">Cari Resepmu</a>
       </main>
-    </section>
+    </section> -->
     <!-- Hero Section end-->
-
-    <!-- About section start-->
-    <section id="about" class="about">
-      <h2><span>Tentang</span>Kami</h2>
-
-      <div class="row">
-        <div class="about-img">
-          <img src="img/tentangkami.jpg" alt="Tentang Kami" />
-        </div>
-        <div class="content">
-          <h3>Kenapa memilih resep kami</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea
-            explicabo aliquid, est illum molestias!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            provident numquam iure expedita voluptatem impedit explicabo eum
-            mollitia dolore nisi.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- about section end-->
-    <!-- menu section start -->
-    <section id="menu" class="menu">
-      <h2><span>Menu</span> Kami</h2>
+   
+    <!-- Unggulan section start -->
+    <section id="unggulan" class="unggulan">
+      <h2><span>Resep Unggulan</span> Kami</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-        soluta quo neque tenetur vel minima?
+        Resep - Resep Unggulan Para Koki
       </p>
 
       <div class="row">
-        <div class="menu-card">
-          <img src="img/menu/2.jpg" alt="Croissant" class="menu-card-img" />
-          <h3 class="menu-card-title">-Croissant-</h3>
-          <p class="menu-card-price">IDR 25K</p>
+        
+        <div class="unggulan-card">
+          <a href="#course">
+            <img src="img/menu/mcourse1.jpg" alt="matcha" class="unggulan-card-img" />
+            <h3 class="unggulan-card-title">-Sunbudu Jiigae-</h3>
+          </a>
         </div>
-
-        <div class="menu-card">
-          <img src="img/menu/2.jpg" alt="Croissant" class="menu-card-img" />
-          <h3 class="menu-card-title">-Croissant-</h3>
-          <p class="menu-card-price">IDR 25K</p>
+        
+        <div class="unggulan-card">
+          <a href="#dessert">
+            <img
+            src="img/menu/dessert2.jpg"
+            alt="Cireng"
+            class="unggulan-card-img"
+            />
+            <h3 class="unggulan-card-title">-Cireng-</h3>
+          </a>
         </div>
-
-        <div class="menu-card">
-          <img src="img/menu/2.jpg" alt="Croissant" class="menu-card-img" />
-          <h3 class="menu-card-title">-Croissant-</h3>
-          <p class="menu-card-price">IDR 25K</p>
+        
+        <div class="unggulan-card">
+          <a href="#dessert">
+            <img
+            src="img/menu/dessert4.jpg"
+            alt="Croissant"
+            class="unggulan-card-img"
+            />
+            <h3 class="unggulan-card-title">-Cilok-</h3>
+          </a>
         </div>
-
-        <div class="menu-card">
-          <img src="img/menu/2.jpg" alt="Croissant" class="menu-card-img" />
-          <h3 class="menu-card-title">-Croissant-</h3>
-          <p class="menu-card-price">IDR 25K</p>
+        <div class="unggulan-card">
+          <a href="#drink"
+            >
+            <img
+              src="img/menu/drink1.jpg"
+              alt="matcha"
+              class="unggulan-card-img"
+            />
+            <h3 class="unggulan-card-title">-Matcha Latte-</h3></a
+          >
         </div>
       </div>
     </section>
-    <!-- menu section end -->
+    <!-- Unggulan section end -->
+
+    <!-- Main course Section start -->
+    <section class="course" id="course">
+      <h2><span>Main Course</span></h2>
+      <p>Temukan Resep Makanan Favoritmu</p>
+
+      <div class="row">
+        <div class="course-card">
+    
+          <div class="course-image">
+            <img src="img/menu/mcourse1.jpg" alt="Product 1" />
+          </div>
+          <div class="course-content">
+            <h3>-Sunbudu Jiigae-</h3>
+            <p>
+              Sup Tahu Sutra Korea
+            </p>
+          </div>
+          <div class="course-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="course-card">
+          
+          <div class="course-image">
+            <img src="img/menu/mcourse2.jpg" alt="Product 2" />
+          </div>
+          <div class="course-content">
+            <h3>-Jajangmyoen-</h3>
+            <p>
+              Mie Kedelai Hitam Korea
+            </p>
+          </div>
+          <div class="course-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="course-card">
+          
+          <div class="course-image">
+            <img src="img/menu/mcourse3.png" alt="Product 3" />
+          </div>
+          <div class="course-content">
+            <h3>-Cream Shrimp-</h3>
+            <p>
+              Udang Creamy
+            </p>
+          </div>
+          <div class="course-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="course-card">
+          
+          <div class="course-image">
+            <img src="img/menu/mcourse4.png" alt="Product 4" />
+          </div>
+          <div class="course-content">
+            <h3>-Bisteak Ayam-</h3>
+            <p>
+              Olahan Ayam Dengan Saus 
+            </p>
+          </div>
+          <div class="course-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- course Section end -->
+
+    <!-- Drink Section start -->
+    <section class="drink" id="drink">
+      <h2><span>Drink</span></h2>
+      <p>Temukan Resep Minuman Favoritmu</p>
+
+      <div class="row">
+        <div class="drink-card">
+    
+          <div class="drink-image">
+            <img src="img/menu/drink4.jpg" alt="Product 1" />
+          </div>
+          <div class="drink-content">
+            <h3>-Strawbrry Milk-</h3>
+            <p>
+              Susu Strawberry Dengan Bulir Asli
+            </p>
+          </div>
+          <div class="drink-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="drink-card">
+          
+          <div class="drink-image">
+            <img src="img/menu/drink1.jpg" alt="Product 2" />
+          </div>
+          <div class="drink-content">
+            <h3>-Matcha Latte-</h3>
+            <p>
+              Teh Jepang With Creamy Milk
+            </p>
+          </div>
+          <div class="drink-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="drink-card">
+          
+          <div class="drink-image">
+            <img src="img/menu/drink3.jpg" alt="Product 3" />
+          </div>
+          <div class="drink-content">
+            <h3>-Dalgona Coffe-</h3>
+            <p>
+              Olahan Coffee Yang Menarik
+            </p>
+          </div>
+          <div class="drink-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="drink-card">
+          
+          <div class="drink-image">
+            <img src="img/menu/drink2.jpg" alt="Product 4" />
+          </div>
+          <div class="drink-content">
+            <h3>-Lemon Tea-</h3>
+            <p>
+              Teh Lemon Segar
+            </p>
+          </div>
+          <div class="drink-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Drink Section end -->
+
+    <!-- Dessert Section start -->
+    <section class="dessert" id="dessert">
+      <h2><span>Dessert</span></h2>
+      <p>Temukan Resep Dessert Favoritmu</p>
+
+      <div class="row">
+        <div class="dessert-card">
+  
+          <div class="dessert-image">
+            <img src="img/menu/dessert7.png" alt="Product 1" />
+          </div>
+          <div class="dessert-content">
+            <h3>-Jiggly Chesscake-</h3>
+            <p>
+              Cake yang Lembut 
+            </p>
+          </div>
+          <div class="dessert-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="dessert-card">
+          
+          <div class="dessert-image">
+            <img src="img/menu/dessert2.jpg" alt="Product 2" />
+          </div>
+          <div class="dessert-content">
+            <h3>-Cireng-</h3>
+            <p>
+              Cemilan Favorit Keluarga
+            </p>
+          </div>
+          <div class="dessert-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="dessert-card">
+          
+          <div class="dessert-image">
+            <img src="img/menu/dessert4.jpg" alt="Product 3" />
+          </div>
+          <div class="dessert-content">
+            <h3>-Cilok-</h3>
+            <p>
+              Cilok dengan Saus Kacang yang Lezat Cocok Saat Hujan
+            </p>
+          </div>
+          <div class="dessert-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+        <div class="dessert-card">
+          
+          <div class="dessert-image">
+            <img src="img/menu/dessert6.jpg" alt="Product 4" />
+          </div>
+          <div class="dessert-content">
+            <h3>-Donat-</h3>
+            <p>
+              Donat anti kempes
+            </p>
+          </div>
+          <div class="dessert-icons">
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Dessert Section end -->
 
     <!-- Contact section start -->
     <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
+      <h2><span>Tambahkan</span> Resepmu</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, cum!
+       Tambahkan resep Favoritmu!!
       </p>
       <div class="row">
         <form action="">
@@ -131,7 +390,10 @@
           </div>
           <div class="input-group">
             <i data-feather="phone "></i>
-            <input type="text" placeholder=" no hp" />
+            <textarea
+              name="komentar"
+              placeholder="masukan resepmu disini!"
+            ></textarea>
           </div>
           <button type="submit" class="btn">Kirim</button>
         </form>
@@ -147,22 +409,519 @@
       </div>
       <div class="links">
         <a href="#home">Home</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
+        <a href="#unggulan">Unggulan</a>
+        <a href="#course">Main Course</a>
+        <a href="#drink">Drink</a>
+        <a href="#dessert">Dessert</a>
+        <a href="#contact">Masukan</a>
       </div>
       <div class="credit">
-        <p>Created by <a href="">muthiakhanza</a>. | &copy; 2023.</p>
+        <p>Created by <a href="">kelompokita</a>. | &copy; 2023.</p>
       </div>
     </footer>
 
     <!-- Footer end -->
-    <!-- Feather icon -->
+
+    <!-- Modal Box Item Detail start -->
+    <!-- mcourse -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/mcourse1.jpg" alt="Product 1" />
+          <div class="course-content">
+            <h3>Sundubu Jjigae (Sup Tahu Pedas Korea)</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            750 ml air putih <br />
+            4 ekor udang <br />
+            1/2 buah bawang bombay <br />
+            1 batang daun bawang <br />
+            2 sendok makan bubuk cabe <br />
+            Cabai rawit sesuai selera <br />
+            2 buah cabai besar <br />
+            1/2 buah zukini <br />
+            1 sendok makan minyak wijen <br />
+            2-3 sendok makan kecap asin <br />
+            1 sendok makan penyedap sapi <br />
+            Garam secukupnya <br />
+            1 bungkus tahu sutra <br />
+            
+
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Potong daun bawang kecil-kecil. <br />
+            2. Potong zukini dan cabai besar.<br />
+            3. Cincang bawang putih dan iris bawang bombay. <br />
+            4. Tuang minyak goreng ke dalam wajan dan tumis daun bawang dengan api sedang. <br />
+            5. Tumis bawang putih, bawang bombay, dan cabai.
+            <br />
+            6. Tumis udang dengan api besar.<br />
+            7. Tambahkan bubuk cabe sebanyak 2 sendok makan dan minyak wijen secukupnya..<br />
+            8. Tuangkan kecap asin sebanyak 2 sendok makan.<br />
+            9. Tumis zukini sebentar.<br />
+            10. Kemudian tuang air..<br />
+            11. Tambahkan garam secukupnya.<br />
+            13. Potong tahu sutra menjadi bulat.<br />
+            14. Masukkan telur dan tahu ke dalam sup.<br />
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mcourse2 -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/mcourse2.jpg" alt="Product 1" />
+          <div class="course-content">
+            <h3>Jajangmyeon </h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            Gula <br />
+            Tepung maizena<br />
+            Air <br />
+            Minyak <br />
+            Pasta kacang hitam <br />
+            Daging ayam<br />
+            Bawang bombay <br />
+            Daun bawang <br />
+            Kubis <br />
+            Zucchini <br />
+            Saus kacang hitam <br />
+            Tepung maizena yang dilarutkan dalam air <br />
+            Saus tiram <br />
+            
+
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Campurkan gula, tepung maizena, dan air. Aduk rata. <br />
+            2. Panaskan wajan dengan api sedang, tambahkan minyak<br />
+            3. Tumis pasta kacang hitam selama 2-3 menit sambil diaduk terus. <br />
+            4. Sisihkan pasta kacang hitam. <br />
+            5. Buang kelebihan minyak, sisakan 1 sendok makan minyak di dalam wajan.
+            <br />
+            6. Masukkan daging ayam dan goreng hingga matang dan pinggirannya kecokelatan.<br />
+            7. Tambahkan bawang bombay dan daun bawang, aduk dan tumis hingga lembut. <br />
+            8. Masukkan kubis dan zucchini, tumis hingga sayuran menjadi lembut.<br />
+            9. Campurkan pasta kacang hitam yang sudah disisihkan tadi.<br />
+            10. Tambahkan larutan tepung maizena yang sudah dilarutkan dalam air, aduk dan masak hingga mengental. <br />
+            11. Bumbui dengan saus tiram.<br />
+            12. Angkat dari api.<br />
+            14. Saring segera..<br />
+            15. Pindahkan mie ke dalam mangkuk besar.<br />
+            16. Tuangkan saus di atas mie.<br />
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mcourse3 -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/mcourse3.png" alt="Product 1" />
+          <div class="course-content">
+            <h3>Creamy Shrimp</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            250 gr shrimp <br />
+            20 gr minched garlic<br />
+            15 gr diced onion <br />
+            1/2 tsp ground black pepper <br />
+            2 tbsp parsley<br />
+            1/2 tsp mushroom broth<br />
+            Dried chilli peppers (optional) <br />
+            Sufficent amount of salt <br />
+            2 tbsp butter of sauteing <br />
+            2 tbsp butter for grilling shrimp <br />
+            120 ml full cream milk<br />
+            
+
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Grill the shrimp <br />
+            2. Saute minced garlic and diced onion<br />
+            3. add the griller shrip to the sauted garlic and onion <br />
+            4.add parsler, mushroom broth, ground blak pepper, salt, and dried chilli peppers(id desired) <br />
+            5. pour int the full cream
+            <br />
+            6. stir well and cook until the sauce thickens<br />
+            7. serve the creamy shrimp dish. <br />
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mcourse4 -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/mcourse4.png" alt="Product 1" />
+          <div class="course-content">
+            <h3>Beesteak Ayam</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            Adonan:<br />
+            450 gr ayam<br />
+            1 butir telur <br />
+            5 sdm tepung roti yang direndam air <br />
+            3 sdm tepung maizena<br />
+            1/2 sdt garam<br />
+            1 sdt kaldu jamur <br />
+            1/2 sdt merica bubuk<br />
+            Saus: <br />
+            4 siung bawang putih <br />
+            6 siung bawang merah<br />
+            1 buah tomat<br />
+            400 ml air<br />
+            8 sdm kecap manis<br />
+            1 sdm saus tiram<br />
+            1/2 sdt kaldu jamur<br />
+            1/2 sdt garam<br />
+            kaldu bubuk sapi/ayam secukupnya<br />
+            
+
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            Adonan: <br />
+            1. Haluskan ayam<br />
+            2. Masukkan telur, tapung roti, tepung maizena, garam, kaldu jamur, dan merica <br />
+            3. Aduk semua bahan hingga rata <br />
+            4. Bentuk adonan menjadi bulat, lalu goreng atau rebus
+            <br />
+            Saus:<br />
+            1. Iris kecil bawang putih dan bawang merah <br />
+            2. Lalu tumis dengan tomat<br />
+            3. Msukkan kecap manis, saus tiram, merica, garam, kaldu jamur, dan kaldu bubuk <br />
+            4. Masak hingga mendidih <br />
+            5. Masukkan adonan dan biarkan selama 15 menit sampai air surut dan mengental<br />
+            6. Beefsteak Ayam siap untuk disajikan<br />
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 1 -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/drink4.jpg" alt="Product 1" />
+          <div class="drink-content">
+            <h3>Strawberry Milk</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            100gr strawberry <br />
+            5 sdt gula pasir <br />
+            30 0ml susu UHT <br />
+            Es batu secukupnya
+
+            <br />
+
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Rendam irisan strawberry dalam air garam selama 10 menit <br />
+            2. Iris tipis strawberry <br />
+            3. Panaskan wajan dengan api kecil <br />
+            4. Masukkan strawberry dan gula pasir, lalu aduk sampai rata dan
+            berair <br />
+            5. Setelah strawberry menjadi seperti selai dan berair, matikan api
+            <br />
+            6. Tuangkan selai strawbery ke dalam gelas <br />
+            7. Tambahkan es batu dan susu UHT secukupnya ke dalam gelas
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="modal1" id="item-detail-modal1">
+      <div class="modal-container1">
+        <a href="#" class="close-icon1"><i data-feather="x"></i></a>
+        <div class="modal-content1">
+          <img src="img/menu/drink1.jpg" alt="Product 2" />
+          <div class="drink-content">
+            <h3>-Matcha Latte-</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            1½ sdt bubuk matcha <br />
+            1 sdm air panas <br />
+            2 sdt madu (sesuai selera) <br />
+            ¾ gelas susu panas
+
+            <br />
+
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Ayak bubuk matcha ke dalam sebuah gelas <br />
+            2. Tambahkan air panas dan aduk hingga tidak ada gumpalan<br />
+            3. Tambahkan madu dan aduk <br />
+            4. Tambahkan susu dan aduk rata (gunakan alat pengocok susu)<br />
+            5. Matcha latte siap disajikan
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal1" id="item-detail-modal1">
+      <div class="modal-container1">
+        <a href="#" class="close-icon1"><i data-feather="x"></i></a>
+        <div class="modal-content1">
+          <img src="img/menu/drink3.jpg" alt="Product 2" />
+          <div class="drink-content">
+            <h3>-Dalgona Coffee-</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            1sdm kopi instan (nesscafe) <br />
+            1sdm gula pasir <br />
+            1sdm air panas <br />
+            Susu UHT<br />
+            Es batu (optional)
+            <br />
+
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Masukkan kopi instan, gula, dan air panas ke dalam mangkuk<br />
+            2. Gunakan mixer dan kocok dengan kecepatan tinggi selama 2-4 menit
+            hingga membentuk puncak yang kaku<br />
+            3. Tuang susu dan masukkan dalgona di atasnya <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal1" id="item-detail-modal1">
+      <div class="modal-container1">
+        <a href="#" class="close-icon1"><i data-feather="x"></i></a>
+        <div class="modal-content1">
+          <img src="img/menu/drink2.jpg" alt="Product 2" />
+          <div class="drink-content">
+            <h3>-Lemon Tea-</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            Black tea <br />
+            Air <br />
+            Jus lemon <br />
+            Madu <br />
+            
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Panaskan air dan tambahkan teh (black tea)
+            <br />
+            2. Matikan kompor setelah mendidih <br />
+            3. Tambahkan jus lemon dan madu, lalu aduk <br />
+            4. Lemon tea siap disajikan <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dessert -->
+    <div class="modal1" id="item-detail-modal1">
+      <div class="modal-container1">
+        <a href="#" class="close-icon1"><i data-feather="x"></i></a>
+        <div class="modal-content1">
+          <img src="img/menu/dessert7.png" alt="Product 2" />
+          <div class="dessert-content">
+            <h3>-Jiggly Chesscake-</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            160 gr Cream Cheese <br />
+            20 gr Unsalted Butter <br />
+            50 ml Susu Plain <br />
+            40 gr Tepung Terigu <br />
+            4 butir Telur <br />
+            1/4 sdt Air Lemon <br />
+            80 gr Gula Pasir <br />
+      
+            
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Siapkan mangkuk dan letakkan di atas panci berisi air panas
+            <br />
+            2. Tuangkan cream cheese ke dalam mangkuk <br />
+            3. Masukkan butter dan aduk hingga merata <br />
+            4. Tuangkan susu dan aduk rata <br />
+            5. Tambahkan tepung terigu yang sudah diayak, lalu aduk hingga merata <br />
+            6. Pisahkan kuning telur dna putih telur <br />
+            7. Maskkan kuning telur ke dalam donan dan aduk rata <br />
+            8. Mixer putih telur dengan kecepatan rendah <br />
+            9. Setelah berbusa, tambahkan gula sedikit demi sedikit sambil terus dikocok hingga adonan membentuk puncak lembut <br />
+            10. Campurkan adonan putih telur ke dalam adonan cream cheese secara perlahan <br />
+            11. Siapkan loyang yang telah dilapisi baking paper <br />
+            12. Panggang dalam oven selama 20 menit dengan suhu 160 derajat Celcius<br />
+            13. Setelah itu, buka pintu oven agar uap panas keluar, kemudian turunkan suhu menjadi 110 derajat Celcius dan panggang selama 60 menit <br />
+            14. Jiggly Cheese Cake siap disajikan. <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal1" id="item-detail-modal1">
+      <div class="modal-container1">
+        <a href="#" class="close-icon1"><i data-feather="x"></i></a>
+        <div class="modal-content1">
+          <img src="img/menu/dessert2.jpg" alt="Product 2" />
+          <div class="dessert-content">
+            <h3>-CIreng-</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            30 gr tepung tapioka <br />
+            200 gr tepung tapioka (untuk melapisi adonan) <br />
+            1 sdt kaldu bubuk<br />
+            1 sdt garam <br />
+            1 sdt lada <br />
+            1 sdm bawang putih yang sudah ditumbuk<br />
+            Daun bawang secukupnya <br />
+            250 ml air <br />
+            Minyak (untuk menggoreng) <br />
+            Sambal: <br />
+            Cabe rawit (sesuai selera) <br />
+            Garam secukupnya <br />
+            siung bawang putih <br />
+            Air asam jawa secukupnya <br />
+      
+            
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Campurkan tepung tapioka, kaldu bubuk, garam, lada, bawang putih, dan daun bawang dalam sebuah mangkuk, lalu aduk hingga rata <br />
+              2. Masak adonan dengan api sedang dan tuangkan air. Masak sampai mengental <br />
+              3. Masukkan adonan ke dalam tepung tapioka (200 gr) lalu aduk <br />
+              4. Bentuk adonan menjadi bulat pipih sesuai dengan selera <br />
+              6. Panaskan minyak dalam wajan dengan api kecil <br />
+              7. Goreng cireng hingga matang, lalu tiriskan <br />
+              8. Uleg cabai rawit, garam, dan bawang putih <br />
+              9. Panaskan air di pancidan masukkan gula merah. Aduk hingga larut <br />
+              10. Tambahkan cabai yang sudah diuleg dan air asam jawa secukupnya <br />
+              11. Tambahkan penyedap rasa. Masak hingga mendidih <br />
+              12. Cireng siap disajikan bersama dnegan sambal tersebut. <br />
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal1" id="item-detail-modal1">
+      <div class="modal-container1">
+        <a href="#" class="close-icon1"><i data-feather="x"></i></a>
+        <div class="modal-content1">
+          <img src="img/menu/dessert4.jpg" alt="Product 2" />
+          <div class="dessert-content">
+            <h3>-Cilok-</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            100gr tepung kanji <br>
+            100gr tepung terigu protein sedang <br>
+            150ml air panas <br>
+            2 batang daun bawang <br>
+            garam <br>
+            merica <br>
+            2 suing bawang putih
+
+            <br>Bahan Saus Kacang: <br>
+            100gr kacang tanah goreng <br>
+            2 suing bawang ptih  <br>
+            3 buah cabai merah <br>
+            30gr gula merah <br>
+            1sdt garam <br>
+            3 sdm kecap manis <br>
+            150ml air panas <br>
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Masukkan semua adonan cilok dan tuang air panas sedikit demi sedikit sampai adonan tidak lengket sambal diaduk <br>
+            2. Aduk hingga adonan bisa dibentuk menjadi bulat <br>
+            3. Bentuk bulat cilok <br>
+            4. Rebus cilok sampai matang <br>
+            5. Haluskan kacang tanah, bawang putih, cabai merah, gula, dan garam <br>
+            6. Lalu tuang air panas sambal diaduk hingga rata <br>
+            7. Panaskan saus tersebut sampai mendidih <br>
+            8. Tuangkan kecap manis, lalu aduk hingga rata dan kental <br>
+            9. Cilok disiram dengan saus kacang dan siap disajikan <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal1" id="item-detail-modal1">
+      <div class="modal-container1">
+        <a href="#" class="close-icon1"><i data-feather="x"></i></a>
+        <div class="modal-content1">
+          <img src="img/menu/dessert6.jpg" alt="Product 2" />
+          <div class="dessert-content">
+            <h3>-Donat-</h3>
+            <br />
+
+            <b>Bahan-Bahan</b> <br />
+            1250gr tepung terigu protein sedang <br>
+            125 gr gula pasir <br>
+            2 butir telur <br>
+            225 ml santan <br>
+            1 sdm inyak goreng <br>
+            1 sdt emulsifier (SP) <br>
+            1/4 sdt garam <br>
+
+            <br>BBahan Toping:
+            200gr cokelat batang <br>
+            100gr kacang sangria
+
+
+
+
+      
+            
+            <br />
+            <b>Langkah-Langkah:</b>
+            <br />
+            1. Masukkan minyak goreng dan garam ke dalam santan, aduk hingga tercampur rata <br>
+            2. Dalam wadah terpisah, campurkan telur, gula pasir, dan emulsifier (SP), kocok dengan mixer dengan kecepatan tinggi hingga mengembang dan mengental <br>
+            3. Tuangkan setengah campuran santan ke dalam adonan telur, kocok dengan kecepatan rendah hingga rata <br>
+            4. Matikan mixer, masukkan setengah bagian tepung terigu yang sudah diayak ke dalam adonan, lalu kocok kembali hingga rata <br>
+            5. Tambahkan sisa campuran santan dan tepung terigu secara bergantian, tetap kocok dengan kecepatan rendah <br>
+            6. Panaskan minyak goreng dengan api kecil, panaskan cetakan donat di dalam minyak selama satu menit sebelum digunakan <br>
+            7. Tuangkan adonan donat ke dalam cetakan hingga penuh <br>
+            8. Rendam bagian bawah donat terlebih dahulu hingga adonan mulai memadat <br> 
+            9. Sesekali tenggelamkan cetakan sambil diayunkan hingga adonan memadat dan mengembang <br>
+            10. Balikkan cetakan hingga donat lepas dari cetakan <br>
+            11. Goreng donat hingga sedikit kecokelatan, angkat dan tiriskan <br>
+            12. Cairkan cokelat batang di atas mangkuk yang berisi air mendidih <br>
+            13. Celupkan permukaan donat ke dalam cokelat cair, taburi dengan kacang (kreasikan sesuai selera) <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
+
+    <!-- Feather Icons -->
     <script>
       feather.replace();
     </script>
 
-    <!-- my javsacript -->
+    <!-- My Javascript -->
     <script src="js/script.js"></script>
   </body>
 </html>
