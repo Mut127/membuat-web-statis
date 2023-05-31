@@ -46,10 +46,15 @@ itemDetailButtons.forEach((btn) => {
 });
 
 // klik tombol close modal
-document.querySelector(".modal .close-icon").onclick = (e) => {
-  itemDetailModal.style.display = "none";
-  e.preventDefault();
-};
+const closeModalIcons = document.querySelectorAll(".modal .close-icon");
+
+closeModalIcons.forEach((icon) => {
+  icon.onclick = (e) => {
+    const modal = icon.closest(".modal");
+    modal.style.display = "none";
+    e.preventDefault();
+  };
+});
 
 // klik di luar modal
 
