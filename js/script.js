@@ -45,14 +45,6 @@ itemDetailButtons.forEach((btn) => {
   };
 });
 
-// klik tombol close modal
-document.querySelector(".modal .close-icon").onclick = (e) => {
-  itemDetailModal.style.display = "none";
-  e.preventDefault();
-};
-
-// klik di luar modal
-
 const itemDetailModal1 = document.querySelector("#item-detail-modal1");
 const itemDetailButtons1 = document.querySelectorAll(".item-detail-button1");
 
@@ -173,6 +165,72 @@ tambahDetailButtons.forEach((btn) => {
   };
 });
 
+// klik tombol close modal
+document.querySelector(".modal .close-icon").onclick = (e) => {
+  itemDetailModal.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon1").onclick = (e) => {
+  itemDetailModal1.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon2").onclick = (e) => {
+  itemDetailModal2.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon3").onclick = (e) => {
+  itemDetailModal3.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon4").onclick = (e) => {
+  itemDetailModal4.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon5").onclick = (e) => {
+  itemDetailModal5.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon6").onclick = (e) => {
+  itemDetailModal6.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon7").onclick = (e) => {
+  itemDetailModal7.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon8").onclick = (e) => {
+  itemDetailModal8.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon9").onclick = (e) => {
+  itemDetailModal9.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon10").onclick = (e) => {
+  itemDetailModal10.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon11").onclick = (e) => {
+  itemDetailModal11.style.display = "none";
+  e.preventDefault();
+};
+
+document.querySelector(".modal .close-icon12").onclick = (e) => {
+  tambahDetailModal.style.display = "none";
+  e.preventDefault();
+};
+// klik di luar modal
 window.onclick = (e) => {
   if (e.target === itemDetailModal) {
     itemDetailModal.style.display = "none";

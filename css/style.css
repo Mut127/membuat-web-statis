@@ -233,6 +233,7 @@ section {
 /* course section */
 .course,
 .unggulan,
+.tips,
 .drink,
 .dessert,
 .products,
@@ -242,6 +243,7 @@ section {
 
 .course h2,
 .unggulan h2,
+.tips h2,
 .drink h2,
 .dessert h2,
 .products h2,
@@ -253,6 +255,7 @@ section {
 
 .course h2 span,
 .unggulan h2 span,
+.tips h2 span,
 .drink h2 span,
 .dessert h2 span,
 .products h2 span,
@@ -260,8 +263,9 @@ section {
   color: #ff8989;
 }
 
-/* unggulan, dessert section */
+/* unggulan, dessert, drink, course section */
 .unggulan h2,
+.tips h2,
 .course h2,
 .drink h2,
 .dessert h2,
@@ -270,6 +274,7 @@ section {
   margin-bottom: 1rem;
 }
 .unggulan p,
+.tips p,
 .course p,
 .drink p,
 .dessert p,
@@ -307,6 +312,31 @@ section {
   margin-top: 2rem;
   background-color: #fdcfcf;
   color: #000000;
+}
+/*  tips section */
+.tips-links {
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #000000;
+  border-width: 2px;
+  padding: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #3d3402;
+  background-color: #fdcfcf;
+}
+
+.tips-links a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 2s;
+}
+
+.tips-links a:hover {
+  background-color: var(--primary);
 }
 
 /* Products Section */
@@ -462,8 +492,7 @@ footer .credit a {
 
 /* Modal Box */
 /* Item Detail */
-.modal,
-.modal1 {
+.modal {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -475,8 +504,7 @@ footer .credit a {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-container,
-.modal-container1 {
+.modal-container {
   position: relative;
   background-color: #fefefe;
   color: #000000;
@@ -484,7 +512,9 @@ footer .credit a {
   padding: 1.2rem;
   border: 1px solid #666;
   width: 80%;
+  height: 80%;
   animation: animateModal 0.5s;
+  overflow: auto;
 }
 
 /* Modal Animation */
@@ -500,13 +530,30 @@ footer .credit a {
 }
 
 .modal-container .close-icon,
-.modal-container1 .close-icon1 {
+.modal-container .close-icon1,
+.modal-container .close-icon2,
+.modal-container .close-icon3,
+.modal-container .close-icon4,
+.modal-container .close-icon5,
+.modal-container .close-icon6,
+.modal-container .close-icon7,
+.modal-container .close-icon8,
+.modal-container .close-icon9,
+.modal-container .close-icon10,
+.modal-container .close-icon11,
+.tambah-modal-container .close-icon12 {
   position: absolute;
   right: 1rem;
+  color: #ff8989;
+  border: 1px solid #666;
+  border-radius: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-content,
-.modal-content1 {
+.modal-content {
   display: flex;
   flex-wrap: nowrap;
 }
@@ -534,24 +581,38 @@ footer .credit a {
   padding: 1rem 1.6rem;
 }
 
-/* Media Queries */
+/* tambah resep section */
+.tambah-modal-container {
+  position: relative;
+  background-color: #fefefe;
+  color: #000000;
+  margin: auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  width: 80%;
+  animation: animateModal 0.5s;
+}
 
-/* laptop */
-@media (max-widht: 1366px) {
+/* Media Queries */
+/* Media Queries */
+/* Laptop */
+/* @media (max-width: 1366px) {
   html {
     font-size: 75%;
   }
-}
-/* tablet */
-@media (max-widht: 758px) {
+} */
+
+/* Tablet */
+/* @media (max-width: 758px) {
   html {
     font-size: 62.5%;
   }
-  #hamberger-menu {
+
+  #hamburger-menu {
     display: inline-block;
   }
 
-  .navabar .navbar-nav {
+  .navbar .navbar-nav {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -565,7 +626,7 @@ footer .credit a {
     right: 0;
   }
 
-  .navabar .navabar-nav a {
+  .navbar .navbar-nav a {
     color: var(--bg);
     display: block;
     margin: 1.5rem;
@@ -573,13 +634,23 @@ footer .credit a {
     font-size: 2rem;
   }
 
-  .navabar .navabar-nav a::after {
+  .navbar .navbar-nav a::after {
     transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
   }
 
   .about .row {
     flex-wrap: wrap;
   }
+
   .about .row .about-img img {
     height: 24rem;
     object-fit: cover;
@@ -590,40 +661,39 @@ footer .credit a {
     padding: 0;
   }
 
-  .about.row .content h3 {
+  .about .row .content h3 {
     margin-top: 1rem;
     font-size: 2rem;
   }
 
-  .about.row .content p {
+  .about .row .content p {
     font-size: 1.6rem;
   }
+
   .menu p {
     font-size: 1.2rem;
   }
+
   .contact .row {
     flex-wrap: wrap;
   }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
   .contact .row form {
     padding-top: 0;
   }
-}
 
-/* mobile */
-/* @media (max-widht: 450px) {
+  .modal-content {
+    flex-wrap: wrap;
+  }
+} */
+
+/* Mobile Phone */
+/* @media (max-width: 450px) {
   html {
     font-size: 55%;
-  }
-  #hamberger-menu {
-    display: inline-block;
-  }
-
-  .navabar .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: #fff;
-    width: 30rem;
-    height: 100vh;
   }
 } */
