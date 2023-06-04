@@ -449,7 +449,9 @@ section {
   background-color: #2222;
   cursor: pointer;
 }
-
+.contact .row form .btn .tambah-detail-button {
+  color: #000000;
+}
 /* Footer */
 footer {
   background-color: #000000;
@@ -593,26 +595,28 @@ footer .credit a {
   animation: animateModal 0.5s;
 }
 
+.tambah-modal-container .tambah-content h3 {
+  text-align: center;
+}
+
 /* Media Queries */
-/* Media Queries */
-/* Laptop */
-/* @media (max-width: 1366px) {
+
+/* laptop */
+@media (max-widht: 1366px) {
   html {
     font-size: 75%;
   }
-} */
-
-/* Tablet */
-/* @media (max-width: 758px) {
+}
+/* tablet */
+@media (max-widht: 758px) {
   html {
     font-size: 62.5%;
   }
-
-  #hamburger-menu {
+  #hamberger-menu {
     display: inline-block;
   }
 
-  .navbar .navbar-nav {
+  .navabar .navbar-nav {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -626,7 +630,7 @@ footer .credit a {
     right: 0;
   }
 
-  .navbar .navbar-nav a {
+  .navabar .navabar-nav a {
     color: var(--bg);
     display: block;
     margin: 1.5rem;
@@ -634,23 +638,13 @@ footer .credit a {
     font-size: 2rem;
   }
 
-  .navbar .navbar-nav a::after {
+  .navabar .navabar-nav a::after {
     transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
-
-  .navbar .search-form {
-    width: 90%;
-    right: 2rem;
   }
 
   .about .row {
     flex-wrap: wrap;
   }
-
   .about .row .about-img img {
     height: 24rem;
     object-fit: cover;
@@ -661,39 +655,40 @@ footer .credit a {
     padding: 0;
   }
 
-  .about .row .content h3 {
+  .about.row .content h3 {
     margin-top: 1rem;
     font-size: 2rem;
   }
 
-  .about .row .content p {
+  .about.row .content p {
     font-size: 1.6rem;
   }
-
   .menu p {
     font-size: 1.2rem;
   }
-
   .contact .row {
     flex-wrap: wrap;
   }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-
   .contact .row form {
     padding-top: 0;
   }
+}
 
-  .modal-content {
-    flex-wrap: wrap;
-  }
-} */
-
-/* Mobile Phone */
-/* @media (max-width: 450px) {
+/* mobile */
+/* @media (max-widht: 450px) {
   html {
     font-size: 55%;
+  }
+  #hamberger-menu {
+    display: inline-block;
+  }
+
+  .navabar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
   }
 } */
